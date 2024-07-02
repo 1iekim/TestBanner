@@ -34,7 +34,6 @@ let frame1_deg = 0;
 let frame2_deg = 115;
 let frame3_deg = 6.7;
 let frame4_deg = -12.67;
-let isMid = false;
 
 frame1.style.transform = `rotate(${frame1_deg}deg)`;
 frame2.style.transform = `rotate(${frame2_deg}deg)`;
@@ -79,6 +78,7 @@ function reDrawFrame() {
 
     rotateSpeed += 0.01;
   }
+  if(time > 180) isFinish = true;
   time += 1;
 }
 
