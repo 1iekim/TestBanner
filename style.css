@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  position: relative;
+  width: 320px;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  background-color: #ffeec1;
+  font-family: Poppins;
+  color: #151519;
+}
+
+.banner__text {
+  position: absolute;
+  top: 50px;
+  font-size: 20.53px;
+  font-weight: 600;
+  line-height: 21.08px;
+  text-align: center;
+}
+
+.banner__title {
+  position: absolute;
+  top: 78px;
+  font-size: 27.92px;
+  font-weight: 800;
+  line-height: 28.68px;
+  text-align: center;
+  z-index: 30;
+}
+
+.banner__frame1,
+.banner__frame2,
+.banner__frame3,
+.banner__frame4 {
+  position: absolute;
+}
+
+.banner__frame1 {
+  width: 185.05px;
+  height: 157.24px;
+  top: 278.31px;
+  left: 200.69px;
+  gap: 0px;
+  transform: rotate(0deg);
+
+  z-index: 10;
+}
+
+.banner__frame2 {
+  width: 218px;
+  top: 278px;
+  left: -6px;
+  transform: rotate(115deg);
+
+  z-index: 5;
+}
+
+.banner__frame3 {
+  width: 237px;
+  top: 143px;
+  left: 126px;
+  transform: rotate(6.7deg);
+
+  z-index: 20;
+}
+
+.banner__frame4 {
+  width: 273px;
+  top: 134px;
+  left: -78px;
+  gap: 0px;
+  transform: rotate(-12.76deg);
+
+  z-index: 15;
+}
